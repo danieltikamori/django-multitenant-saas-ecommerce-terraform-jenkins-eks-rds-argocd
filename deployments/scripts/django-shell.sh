@@ -1,4 +1,4 @@
-docker exec -it web_prodxcloud_django python manage.py shell
+docker exec -it web_amlume_django python manage.py shell
 
 tenant = Client(schema_name="app1", name="app1")
 

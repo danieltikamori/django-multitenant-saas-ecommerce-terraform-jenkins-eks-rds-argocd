@@ -10,7 +10,7 @@ variable "awsprops" {
     subnet       = "subnet-063a85d9139280d8a"
     publicip     = true
     keyname      = "prodxsecure"
-    secgroupname = "prodxcloud-aws-ec2-lab-1"
+    secgroupname = "amlume-aws-ec2-lab-1"
   }
 }
 
@@ -70,10 +70,10 @@ resource "aws_instance" "project-iac-2" {
     volume_type           = "gp2"
   }
   tags = {
-    Name        = "prodxcloud-aws-ec2-lab-1"
+    Name        = "amlume-aws-ec2-lab-1"
     Environment = "DEV"
     OS          = "UBUNTU"
-    Managed     = "PRODXCLOUD"
+    Managed     = "amlume"
   }
 
   provisioner "file" {

@@ -1,1 +1,1 @@
-docker exec -it prodxcloud-django-postgresdb bash
+docker exec -it amlume-django-postgresdb bash

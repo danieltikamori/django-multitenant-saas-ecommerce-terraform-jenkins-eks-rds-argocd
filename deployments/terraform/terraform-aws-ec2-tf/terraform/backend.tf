@@ -1,16 +1,16 @@
 # terraform {
 #   backend "remote" {  
 #     hostname="app.terraform.io"  
-#     organization = "prodxcloud" 
+#     organization = "amlume" 
 #     workspaces {
-#       prefix = "prodxcloud" 
+#       prefix = "amlume" 
 #     }
 #   }
 # }
 
 terraform {
   backend "s3" {
-    bucket         = "django-app-9"
+    bucket         = "django-app-amlume"
     region         = "us-east-1"
     key            = "state/terraform.tfstate"
     dynamodb_table = "data_onents_tf_lockid"

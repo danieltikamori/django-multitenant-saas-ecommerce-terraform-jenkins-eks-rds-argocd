@@ -5,12 +5,12 @@ variable "aws_region" {
 
 variable "backend_organization" {
   type    = string
-  default = "prodxcloud"
+  default = "amlume"
 }
 
 variable "backend_worspaces" {
   type    = string
-  default = "prodxcloud"
+  default = "amlume"
 }
 
 variable "access_key" {
@@ -60,7 +60,7 @@ variable "instance_keyName" {
 variable "instance_secgroupname" {
   description = "This is a security Group Name"
   type        = string
-  default     = "prodxcloud-aws-ec2-lab-1"
+  default     = "amlume-aws-ec2-lab-1"
 }
 
 variable "instance_publicip" {

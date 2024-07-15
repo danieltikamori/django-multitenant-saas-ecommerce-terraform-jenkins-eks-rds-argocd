@@ -55,7 +55,7 @@ pipeline{
 
             stage('trivy Scan') {
                 steps {
-                    sh 'trivy joelwembo/prodxcloud-django-web:latest'
+                    sh 'trivy joelwembo/amlume-django-web:latest'
                 }
             }
 

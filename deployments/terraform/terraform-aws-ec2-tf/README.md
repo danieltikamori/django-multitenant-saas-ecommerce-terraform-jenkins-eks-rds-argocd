@@ -1,1 +1,1 @@
-# prodxcloud-terraform-github-actions
+# amlume-terraform-github-actions

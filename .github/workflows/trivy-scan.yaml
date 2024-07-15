@@ -20,11 +20,11 @@ jobs:
         uses: actions/checkout@v2
       - name: Build an image from Dockerfile
         run: |
-          docker build -t docker.io/joelwembo/prodxcloud-django-web:latest .
+          docker build -t docker.io/joelwembo/amlume-django-web:latest .
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'docker.io/joelwembo/prodxcloud-django-web:latest'
+          image-ref: 'docker.io/joelwembo/amlume-django-web:latest'
           format: 'table'
         #   exit-code: '1'
           ignore-unfixed: true
